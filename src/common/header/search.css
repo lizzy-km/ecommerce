@@ -1,0 +1,20 @@
+.item{
+    max-height: 20rem;
+    overflow-y: scroll;
+    height: 0rem;
+    opacity: 0;
+    z-index: 9999999999 !important;
+    width:40rem;
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+.inp:hover .item{
+    z-index: 999999 !important;
+    opacity: 1;
+    height: 20rem;
+    top:100%;
+}
