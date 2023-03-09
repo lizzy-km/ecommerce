@@ -132,6 +132,7 @@ button {
   border-radius: 50px;
   color: #fff;
   margin: 10px;
+  
 }
 /*---------product-----------*/
 .product {
@@ -141,17 +142,18 @@ button {
   border-radius: 8px;
   box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
   margin: 10px;
+  /* height: 20rem; */
 }
-.product h3 {
+ h3 {
   font-weight: 400;
   font-size: 17px;
 }
-.product .rate i {
+.rate i {
   font-size: 15px;
   color: #ffcd4e;
   margin: 5px 5px 5px 0;
 }
-.product .price {
+.price {
   display: flex;
   justify-content: space-between;
   color: #e94560;

@@ -53,8 +53,8 @@ const fetchMeal = async()=>{
         console.log(meals)
         }
 
-        const vsm = " product-content max-h-[28rem] overflow-hidden  grid1"
-        const vlg = " product-content max-h-[999999999rem] overflow-hidden  grid1"
+        const vsm = " w-[100%] justify-center items-center product-content max-h-[27rem] overflow-hidden flex-row gap-[1rem] flex flex-wrap"
+        const vlg = " w-[100%]  justify-center items-center product-content max-h-[999999999rem] overflow-hidden flex-row gap-[1rem]  flex flex-wrap"
         const [vclc,setVclc]= useState(vsm)
 
         const view =()=>{
@@ -65,7 +65,7 @@ const fetchMeal = async()=>{
           setViewall(viewa)
           setVclc(vsm)
         }
-        const viewa =<span className=" cursor-pointer" onClick={view} >View all</span>
+        const viewa =<span className="  cursor-pointer" onClick={view} >View all</span>
         const viewl = <span className=" cursor-pointer" onClick={less} >View less</span>
 
         const[viewall,setViewall] = useState(viewa)
@@ -76,14 +76,14 @@ const fetchMeal = async()=>{
   return (
     <>
       <section className='shop background'>
-        <div className=' max-[500px]:flex max-[500px]:flex-col  container d_flex'>
+        <div className=' max-[500px]:flex max-[500px]:flex-col justify-between  flex flex-row'>
         <>
-      <div className=' max-[500px]:h-[10vh] p-[.2rem] bg-slate-200 h-[90vh]'>
-        <div className='flex  flex-row justify-between'>
+      <div className=' max-[500px]:h-[10vh] p-[.2rem] w-[18rem] bg-slate-200 h-[90vh]'>
+        <div className='flex h-[3rem] pt-[1rem] text-2xl  flex-row justify-between'>
           <h1 className="pl-[.5rem] opacity-80 " >Menu </h1>
           <h1 className="pr-[.5rem] opacity-50 " >Shops </h1>
         </div>
-        <div className='max-h-[27rem] max-[500px]:flex-row max-[500px]:max-h-[10rem] max-[500px]:w-[22rem]   flex flex-col  overflow-auto'>
+        <div className='max-h-[27rem] max-[500px]:flex-row max-[500px]:max-h-[10rem] max-[500px]:w-[22rem]  p-[1rem] flex flex-col gap-[1rem]  overflow-auto'>
         {categories.map((value, index) => {
           return (
             <div 
@@ -92,8 +92,8 @@ const fetchMeal = async()=>{
 
           }}  
           key={index} id={value.idCategory}
-             className=' max-[500px]:w-[6rem] w-[4rem]  cursor-pointer border-transparent border-4 hover:border-b-[#ff6c7dbb] max-[500px]:flex-col max-[500px]:pl-[2rem] flex-row text-center justify-center  items-center  flex ' >
-              <img className="mt-[.6rem] object-contain rounded-full h-[1rem] w-[1rem]'" src={value.strCategoryThumb} alt='' />
+             className=' max-[500px]:w-[6rem] w-[10rem] h-[4rem]  cursor-pointer border-transparent border-4 hover:border-b-[#ff6c7dbb] max-[500px]:flex-col max-[500px]:pl-[2rem] flex-row text-center justify-left  items-center  flex ' >
+              <img className="mt-[.6rem] object-contain rounded-full h-[1.5rem] w-[1.5rem]'" src={value.strCategoryThumb} alt='' />
               <span className="  opacity-80 capitalize">{value.strCategory}</span>
             </div>
           )
