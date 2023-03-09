@@ -76,14 +76,14 @@ const fetchMeal = async()=>{
   return (
     <>
       <section className='shop background'>
-        <div className='container d_flex'>
+        <div className=' max-[500px]:flex max-[500px]:flex-col  container d_flex'>
         <>
-      <div className='category'>
-        <div className='chead d_flex'>
-          <h1>Menu </h1>
-          <h1>Shops </h1>
+      <div className=' max-[500px]:h-[10vh] p-[.2rem] bg-slate-200 h-[90vh]'>
+        <div className='flex  flex-row justify-between'>
+          <h1 className="pl-[.5rem] opacity-80 " >Menu </h1>
+          <h1 className="pr-[.5rem] opacity-50 " >Shops </h1>
         </div>
-        <div className='max-h-[27rem] overflow-auto'>
+        <div className='max-h-[27rem] max-[500px]:flex-row max-[500px]:max-h-[10rem] max-[500px]:w-[22rem]   flex flex-col  overflow-auto'>
         {categories.map((value, index) => {
           return (
             <div 
@@ -92,9 +92,9 @@ const fetchMeal = async()=>{
 
           }}  
           key={index} id={value.idCategory}
-             className=' w-[4rem]  cursor-pointer border-transparent border-4 hover:border-b-[#ff6c7dbb] flex-row  items-center  flex ' >
+             className=' max-[500px]:w-[6rem] w-[4rem]  cursor-pointer border-transparent border-4 hover:border-b-[#ff6c7dbb] max-[500px]:flex-col max-[500px]:pl-[2rem] flex-row text-center justify-center  items-center  flex ' >
               <img className="mt-[.6rem] object-contain rounded-full h-[1rem] w-[1rem]'" src={value.strCategoryThumb} alt='' />
-              <span className="capitalize">{value.strCategory}</span>
+              <span className="  opacity-80 capitalize">{value.strCategory}</span>
             </div>
           )
         })}
@@ -107,7 +107,7 @@ const fetchMeal = async()=>{
           <div className='contentWidth'>
             <div className='heading d_flex'>
               <div className='heading-left row  f_flex'>
-                <h2>Mobile Phones</h2>
+                <h2>Foods</h2>
               </div>
               <div className='heading-right row '>
                  {viewall}
