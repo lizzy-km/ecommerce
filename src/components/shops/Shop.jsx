@@ -78,7 +78,7 @@ const fetchMeal = async()=>{
       <section className='shop background'>
         <div className=' max-[500px]:flex max-[500px]:flex-col justify-between items-center  flex flex-row'>
         <>
-      <div className=' max-[500px]:h-[10vh] p-[.2rem] w-[20rem] bg-slate-200 h-[90vh]'>
+      <div className=' max-[500px]:h-[10vh] p-[.2rem] w-[22rem] bg-slate-50 h-[90vh]'>
         <div className='flex h-[3rem] max-[500px]:h-[.5rem] max-[500px]:pt-[.2rem] pt-[1rem] text-2xl max-[500px]:text-lg flex-row justify-between'>
           <h1 className="pl-[.5rem] opacity-80 " >Menu </h1>
           <h1 className="pr-[.5rem] opacity-50 " >Shops </h1>
@@ -104,7 +104,7 @@ const fetchMeal = async()=>{
       </div>
     </>
 
-          <div className='contentWidth'>
+          <div className=' max-[500px]:mt-[1rem] contentWidth'>
             <div className='heading d_flex'>
               <div className='heading-left row  f_flex'>
                 <h2>Foods</h2>

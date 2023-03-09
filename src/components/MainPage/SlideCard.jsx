@@ -556,7 +556,7 @@ const SlideCard = () => {
         {Random.map((value, index) => {
           return (
             <>
-              <div className='box d_flex max-[500px]:mt-[1rem] mt-[80px]' key={index}>
+              <div className='box bg-slate-300 d_flex max-[500px]:mt-[1rem] mt-[80px]' key={index}>
                 <div className='left max-[500px]:max-w-8rem mb-[.5rem] '>
                   <h1 className=" text-[45px] max-[500px]:text-[20px] ">{value.strMeal}</h1>
                   <p>{value.strCategory}</p>
