@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 const SlideCard = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -556,14 +556,14 @@ const SlideCard = () => {
         {Random.map((value, index) => {
           return (
             <>
-              <div className='box d_flex top' key={index}>
-                <div className='left'>
-                  <h1>{value.strMeal}</h1>
+              <div className='box d_flex max-[500px]:mt-[1rem] mt-[80px]' key={index}>
+                <div className='left max-[500px]:max-w-8rem mb-[.5rem] '>
+                  <h1 className=" text-[45px] max-[500px]:text-[20px] ">{value.strMeal}</h1>
                   <p>{value.strCategory}</p>
-                  <Link to={`/Detail/${value.idMeal}`} className='btn-primary'>Visit Collections</Link>
+                  <Link to={`/Detail/${value.idMeal}`} className=' max-[500px]:ml-[2rem] max-[500px]:text-md max-[500px]:w-[10rem] bg-[#e94560] max-[500px]:p-[.5rem] text-slate-100 max-[500px]:rounded-[.5rem] p-[1rem] rounded-[1rem] '>Visit Collections</Link>
                 </div>
                 <Link to={`/Detail/${value.idMeal}`} className='right'>
-                  <img className=" rounded-full h-[15rem] w-[15rem]" src={value.strMealThumb} alt='' />
+                  <img className=" rounded-full max-[500px]:h-[6rem] max-[500px]:w-[6rem] h-[15rem] w-[15rem]" src={value.strMealThumb} alt='' />
                 </Link>
               </div>
             </>

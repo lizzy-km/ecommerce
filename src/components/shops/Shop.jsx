@@ -76,14 +76,14 @@ const fetchMeal = async()=>{
   return (
     <>
       <section className='shop background'>
-        <div className=' max-[500px]:flex max-[500px]:flex-col justify-between  flex flex-row'>
+        <div className=' max-[500px]:flex max-[500px]:flex-col justify-between items-center  flex flex-row'>
         <>
-      <div className=' max-[500px]:h-[10vh] p-[.2rem] w-[18rem] bg-slate-200 h-[90vh]'>
-        <div className='flex h-[3rem] pt-[1rem] text-2xl  flex-row justify-between'>
+      <div className=' max-[500px]:h-[10vh] p-[.2rem] w-[20rem] bg-slate-200 h-[90vh]'>
+        <div className='flex h-[3rem] max-[500px]:h-[.5rem] max-[500px]:pt-[.2rem] pt-[1rem] text-2xl max-[500px]:text-lg flex-row justify-between'>
           <h1 className="pl-[.5rem] opacity-80 " >Menu </h1>
           <h1 className="pr-[.5rem] opacity-50 " >Shops </h1>
         </div>
-        <div className='max-h-[27rem] max-[500px]:flex-row max-[500px]:max-h-[10rem] max-[500px]:w-[22rem]  p-[1rem] flex flex-col gap-[1rem]  overflow-auto'>
+        <div className='max-h-[29rem] max-[500px]:pt-[0.5rem] pt-[1rem] max-[500px]:flex-row max-[500px]:max-h-[10rem] max-[500px]:w-[22rem] max-[500px]:p-[.5rem] max-[500px]:ml-[-1rem]  p-[1rem] flex flex-col gap-[1rem]  overflow-auto'>
         {categories.map((value, index) => {
           return (
             <div 

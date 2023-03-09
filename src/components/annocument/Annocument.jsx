@@ -42,13 +42,13 @@ const fetchData = async()=>{
     <>
       <section className='annocument background'>
         <div className='container p-[1rem] bg-slate-300 d_flex'>
-          <div id={count}  className='img' style={mystyle}>
+          <div id={count}  className='p-[.5rem] img' style={mystyle}>
             
             <img  className=" w-[20rem] object-cover" src={categories.strMealThumb}  />
              
             
           </div>
-          <div id={count}  className='img' style={mystyle1}>
+          <div id={count}  className=' p-[.5rem] img' style={mystyle1}>
             <img  className=" h-[20rem] w-[50rem] object-cover" src={categories.strMealThumb}  />
           </div>
           <div className=" w-[1.5rem] text-[1.8rem] flex items-center justify-center cursor-pointer opacity-70 bg-slate-400" onClick={clk}>

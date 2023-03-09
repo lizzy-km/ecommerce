@@ -15,7 +15,7 @@ const ShopCart = ({ shopItems,index,addToCart }) => {
   return (
     <>
       
-          <div key={index} className=' relative flex flex-col items-center justify-center h-auto w-[19rem]  '>
+          <div key={index} className=' relative flex flex-col pb-[.3rem] items-center justify-center h-auto w-[18rem]  '>
             <div className=' product '>
               <Link  className='w-[15rem]'>
                 <span className='discount'>{shopItems.idMeal}% Off</span>

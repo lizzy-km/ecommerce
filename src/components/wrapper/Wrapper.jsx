@@ -27,7 +27,7 @@ const Wrapper = () => {
   return (
     <>
       <section className='wrapper background'>
-        <div className='container grid2'>
+        <div className='max-[500px]:flex max-[500px]:flex-col container grid2'>
           {data.map((val, index) => {
             return (
               <div className='product' key={index}>
