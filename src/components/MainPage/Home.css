@@ -1,10 +1,10 @@
 .homeSlide h1 {
   /* font-size: 45px; */
   line-height: 55px;
-  margin: 50px 0 20px 0;
+  /* margin: 50px 0 20px 0; */
 }
 .homeSlide p {
-  margin: 20px 0;
+  margin: 3rem 0;
 }
 .homeSlide ul {
   position: absolute;

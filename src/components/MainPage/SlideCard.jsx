@@ -556,14 +556,15 @@ const SlideCard = () => {
         {Random.map((value, index) => {
           return (
             <>
-              <div className='box bg-slate-300 d_flex max-[500px]:mt-[1rem] mt-[80px]' key={index}>
-                <div className='left max-[500px]:max-w-8rem mb-[.5rem] '>
-                  <h1 className=" text-[45px] max-[500px]:text-[20px] ">{value.strMeal}</h1>
+              <div className='box bg-slate-300 h-[100%] flex justify-between  max-[500px]:mt-[1rem] mt-[80px]' key={index}>
+              
+                <div className='left flex flex-col h-[100%] justify-between p-[1rem] max-[500px]:max-w-8rem mb-[.5rem] '>
+                <h1 className=" text-[45px] mt-[-2rem] max-[500px]:text-[20px] ">{value.strMeal}</h1>
                   <p>{value.strCategory}</p>
-                  <Link to={`/Detail/${value.idMeal}`} className=' max-[500px]:ml-[2rem] max-[500px]:text-md max-[500px]:w-[10rem] bg-[#e94560] max-[500px]:p-[.5rem] text-slate-100 max-[500px]:rounded-[.5rem] p-[1rem] rounded-[1rem] '>Visit Collections</Link>
+                  <Link to={`/Detail/${value.idMeal}`} className=' text-center max-[500px]:ml-[2rem] max-[500px]:text-md max-[500px]:w-[10rem] bg-[#e94560] max-[500px]:p-[.5rem] text-slate-100 max-[500px]:rounded-[.5rem] p-[1rem] rounded-[1rem] '>Visit Collections</Link>
                 </div>
-                <Link to={`/Detail/${value.idMeal}`} className='right'>
-                  <img className=" rounded-full max-[500px]:h-[6rem] max-[500px]:w-[6rem] h-[15rem] w-[15rem]" src={value.strMealThumb} alt='' />
+                <Link to={`/Detail/${value.idMeal}`} className=' right'>
+                  <img className=" text-center rounded-full max-[500px]:h-[6rem] max-[500px]:w-[6rem] h-[15rem] w-[15rem]" src={value.strMealThumb} alt='' />
                 </Link>
               </div>
             </>
